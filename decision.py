@@ -26,6 +26,9 @@ class Node:
         for attr_val, child in self.children.items():
             child.draw( indent + 4, attr_val )
 
+
+## !! CURENTLY NOT WORKING WITH COUNTINOUS-VALUED ATTRIBUTES !!
+
 class DecisionTree:
     def __init__( self, root: Node ) -> None:
         self.root = root

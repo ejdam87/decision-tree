@@ -21,10 +21,10 @@ def get_distr( data: pd.DataFrame, attr: Attribute ) -> dict[ str, int ]:
     return Counter( data[ attr ] )
 
 
-def get_partial_distr(  data: pd.DataFrame,
-                        attr: Attribute,
-                        val: str,
-                        goal: str) -> dict[ str, int ]:
+def get_partial_distr( data: pd.DataFrame,
+                       attr: Attribute,
+                       val: str,
+                       goal: str ) -> dict[ str, int ]:
     """
     Returns distribution of rows with attribute value val
     """
